@@ -141,7 +141,7 @@ USE_SDL2 = 1
     CPU_FLAGS += -march=armv8-a -mtune=cortex-a53 -mfpu=neon-fp-armv8
     CFLAGS +=  -DARMV6T2 -DUSE_ARMNEON -DARM_HAS_DIV -DUSE_SDL2 -DMALI_GPU -DUSE_RENDER_THREAD -DTINKER
     HAVE_NEON = 1
-    NAME  = amiberry-vero4k
+    NAME  = amiberry-rockpro64
 
 else ifeq ($(PLATFORM),tinker)
 USE_SDL2 = 1
