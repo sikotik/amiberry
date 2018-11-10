@@ -136,11 +136,10 @@ USE_SDL2 = 1
         MORE_CFLAGS += -fomit-frame-pointer
     endif
 	
-else ifeq ($(PLATFORM),vero4k)
+else ifeq ($(PLATFORM),rockpro64)
 USE_SDL2 = 1
     CPU_FLAGS += -march=armv8-a -mtune=cortex-a53 -mfpu=neon-fp-armv8
-    CFLAGS += -I/opt/vero3/include -DARMV6T2 -DUSE_ARMNEON -DARM_HAS_DIV -DUSE_SDL2 -DMALI_GPU -DUSE_RENDER_THREAD -DTINKER
-    LDFLAGS += -L/opt/vero3/lib
+    CFLAGS +=  -DARMV6T2 -DUSE_ARMNEON -DARM_HAS_DIV -DUSE_SDL2 -DMALI_GPU -DUSE_RENDER_THREAD -DTINKER
     HAVE_NEON = 1
     NAME  = amiberry-vero4k
 
